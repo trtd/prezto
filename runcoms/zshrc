@@ -10,4 +10,15 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+export CELERY_AMQP_HOST="192.168.99.100"
+export CELERY_AMQP_PORT="32773"
+
 # Customize to your needs...
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+export VIRTUALENVWRAPPER_PYTHON=python3
+
+export OPENSSL_ROOT_DIR=/usr/local/opt/openssl/
+
+. ~/.alias
+export EXA_COLORS="ur=0;33:uw=0;35:ux=0;32:ue=0;32:gr=2;33:gw=2;35:gx=2;32:tr=2;33:tw=2;35:tx=2;32:di=0;36:da=0;34"
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
